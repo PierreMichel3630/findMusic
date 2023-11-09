@@ -1,0 +1,36 @@
+{
+  "commun": {
+    "albums": "Alben",
+    "all": "Alle",
+    "artists": "Künstler",
+    "contributors": "Mitwirkende",
+    "developby": "Entwickelt von",
+    "episodes": "Episoden",
+    "error": "Hoppla! Ein Fehler ist aufgetreten. ",
+    "fans": "Fans",
+    "playlists": "Wiedergabelisten",
+    "podcasts": "Podcats",
+    "search": "Suchen Sie nach einem Lied, einem Sänger, einem Album, ...",
+    "songs": "Wertpapiere",
+    "top100albums": "Top 100 Alben",
+    "top100artists": "Top 100 Künstler",
+    "top100playlists": "Top 100 Playlists",
+    "top100podcats": "Top 100 Podcats",
+    "top100songs": "Top 100 Songs",
+    "topalbums": "Top-Alben",
+    "topartists": "Top-Künstler",
+    "topplaylists": "Top-Playlists",
+    "toppodcasts": "Top-Podcasts",
+    "topsongs": "Top-Songs",
+    "tracks": "Spuren",
+    "viewall": "Alles sehen"
+  },
+  "pages": {
+    "home": {
+      "title": "Willkommen"
+    },
+    "search": {
+      "title": "Forschung"
+    }
+  }
+}

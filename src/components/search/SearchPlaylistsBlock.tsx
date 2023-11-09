@@ -1,0 +1,86 @@
+import { Grid, Typography } from "@mui/material";
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { useParams } from "react-router-dom";
+import { searchAll, searchNext } from "src/api/deezer";
+import { Playlist } from "src/model/Playlist";
+import { Type } from "src/model/enums/Type";
+import { CardPlaylist } from "../card/CardPlaylist";
+import { BlockSkeletonRound } from "../skeleton/Skeleton";
+
+export const SearchPlaylistsBlock = () => {
+  const NUMBERITEM = 24;
+  const { t } = useTranslation();
+  let { query } = useParams();
+
+  const [total, setTotal] = useState<number | undefined>(undefined);
+  const [playlists, setPlaylists] = useState<Array<Playlist>>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
+  const [next, setNext] = useState<string | undefined>(undefined);
+
+  const search = async () => {
+    if (query) {
+      searchAll(query, Type.playlist, NUMBERITEM).then((res) => {
+        setTotal(res.data.total);
+        setNext(res.data.next);
+        setPlaylists(res.data.data as Array<Playlist>);
+        setIsLoading(false);
+      });
+    }
+  };
+
+  const init = () => {
+    setIsLoading(true);
+    setPlaylists([]);
+  };
+
+  useEffect(() => {
+    init();
+    search();
+  }, [query]);
+
+  const getNextPage = async () => {
+    if (next) {
+      setIsLoading(true);
+      const { data } = await searchNext(next);
+      setPlaylists((prev) => [...prev, ...(data.data as Array<Playlist>)]);
+      setNext(data.next);
+      setIsEnd(data.next === undefined);
+      setIsLoading(false);
+    }
+  };
+
+  const handleScroll = () => {
+    if (
+      window.innerHeight + document.documentElement.scrollTop !==
+        document.documentElement.offsetHeight ||
+      isLoading ||
+      isEnd
+    ) {
+      return;
+    }
+    getNextPage();
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [next, isLoading, isEnd]);
+
+  return (
+    <Grid container spacing={1}>
+      <Grid item xs={12}>
+        <Typography variant="h2" sx={{ textTransform: "lowercase" }}>
+          {total} {t("commun.playlists")}
+        </Typography>
+      </Grid>
+      {playlists.map((playlist) => (
+        <Grid item key={playlist.id} xs={6} sm={4} md={4} lg={3}>
+          <CardPlaylist playlist={playlist} />
+        </Grid>
+      ))}
+      {isLoading && <BlockSkeletonRound number={NUMBERITEM} />}
+    </Grid>
+  );
+};

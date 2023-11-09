@@ -1,0 +1,36 @@
+{
+  "commun": {
+    "albums": "Albums",
+    "all": "All",
+    "artists": "Artists",
+    "contributors": "Contributors",
+    "developby": "Developped by",
+    "episodes": "Episodes",
+    "error": "Oops, an error occurred. ",
+    "fans": "Fans",
+    "playlists": "Playlists",
+    "podcasts": "Podcats",
+    "search": "Search for a song, a singer, an album, ...",
+    "songs": "Securities",
+    "top100albums": "Top 100 Albums",
+    "top100artists": "Top 100 Artists",
+    "top100playlists": "Top 100 Playlists",
+    "top100podcats": "Top 100 Podcats",
+    "top100songs": "Top 100 Songs",
+    "topalbums": "Top Albums",
+    "topartists": "Top Artists",
+    "topplaylists": "Top Playlists",
+    "toppodcasts": "Top Podcasts",
+    "topsongs": "Top Songs",
+    "tracks": "Tracks",
+    "viewall": "See everything"
+  },
+  "pages": {
+    "home": {
+      "title": "Welcome"
+    },
+    "search": {
+      "title": "Research"
+    }
+  }
+}

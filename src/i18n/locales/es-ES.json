@@ -1,0 +1,36 @@
+{
+  "commun": {
+    "albums": "Álbumes",
+    "all": "Todo",
+    "artists": "Artistas",
+    "contributors": "Colaboradores",
+    "developby": "Desarrollado por",
+    "episodes": "Episodios",
+    "error": "Oops! Ha ocurrido un error. ",
+    "fans": "Aficionados",
+    "playlists": "Listas de reproducción",
+    "podcasts": "Podcats",
+    "search": "Busca una canción, un cantante, un álbum,...",
+    "songs": "Valores",
+    "top100albums": "100 mejores álbumes",
+    "top100artists": "100 mejores artistas",
+    "top100playlists": "Las 100 mejores listas de reproducción",
+    "top100podcats": "Los 100 mejores podcasts",
+    "top100songs": "Las 100 mejores canciones",
+    "topalbums": "Mejores álbumes",
+    "topartists": "Mejores artistas",
+    "topplaylists": "Listas de reproducción principales",
+    "toppodcasts": "Principales podcasts",
+    "topsongs": "Mejores canciones",
+    "tracks": "Pistas",
+    "viewall": "Ver todo"
+  },
+  "pages": {
+    "home": {
+      "title": "Bienvenido"
+    },
+    "search": {
+      "title": "Investigación"
+    }
+  }
+}

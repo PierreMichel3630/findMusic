@@ -1,0 +1,36 @@
+{
+  "commun": {
+    "albums": "Album",
+    "all": "Tutto",
+    "artists": "Artisti",
+    "contributors": "Contributori",
+    "developby": "Sviluppato da",
+    "episodes": "Episodi",
+    "error": "Spiacenti, si è verificato un errore. ",
+    "fans": "Tifosi",
+    "playlists": "Playlist",
+    "podcasts": "Podcat",
+    "search": "Cerca una canzone, un cantante, un album,...",
+    "songs": "Titoli",
+    "top100albums": "I 100 migliori album",
+    "top100artists": "I 100 migliori artisti",
+    "top100playlists": "Le 100 migliori playlist",
+    "top100podcats": "I 100 migliori Podcat",
+    "top100songs": "Le migliori 100 canzoni",
+    "topalbums": "I migliori album",
+    "topartists": "I migliori artisti",
+    "topplaylists": "Le migliori playlist",
+    "toppodcasts": "I migliori podcast",
+    "topsongs": "Canzoni migliori",
+    "tracks": "Brani",
+    "viewall": "Vedi tutto"
+  },
+  "pages": {
+    "home": {
+      "title": "Benvenuto"
+    },
+    "search": {
+      "title": "Ricerca"
+    }
+  }
+}

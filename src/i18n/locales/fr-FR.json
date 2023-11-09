@@ -1,0 +1,36 @@
+{
+  "commun": {
+    "albums": "Albums",
+    "all": "Tous",
+    "artists": "Artistes",
+    "contributors": "Contributeurs",
+    "developby": "Développé par",
+    "episodes": "Épisodes",
+    "error": "Oups une erreur est survenue. Veuillez réssayer.",
+    "fans": "Fans",
+    "playlists": "Playlists",
+    "podcasts": "Podcats",
+    "search": "Rechercher un titre, un chanteur, un album, ...",
+    "songs": "Titres",
+    "top100albums": "Top 100 Albums",
+    "top100artists": "Top 100 Artistes",
+    "top100playlists": "Top 100 Playlists",
+    "top100podcats": "Top 100 Podcats",
+    "top100songs": "Top 100 Titres",
+    "topalbums": "Top Albums",
+    "topartists": "Top Artistes",
+    "topplaylists": "Top Playlists",
+    "toppodcasts": "Top Podcasts",
+    "topsongs": "Top Titres",
+    "tracks": "Titres",
+    "viewall": "Voir tout"
+  },
+  "pages": {
+    "home": {
+      "title": "Accueil"
+    },
+    "search": {
+      "title": "Recherche"
+    }
+  }
+}
